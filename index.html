@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Desafio 1 Senpai</title> 
+  <link rel="stylesheet" href="style.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="card_face">
+        <img src="./images/bg-card-front.png" alt="card">
+        <div class="card_front_info">
+          <img src="./images/card-logo.svg" alt="card logo">
+          <div class="user">
+            <div class="card_number">
+              <span>0000</span>
+              <span>0000</span>
+              <span>0000</span>
+              <span>0000</span>
+            </div>
+           <div class="personal">
+            <p class="name">Fernando Irusta</p>
+            <p class = "birth"><span class = "month">00</span>/ <span class ="year">00</span></p>
+           </div>
+          </div>
+        </div>
+         <!-- ALT SHIFT A -->
+      </div>
+      <div class="card_back">
+        <img src="./images/bg-card-back.png" alt="">
+        <p>000</p>
+      </div>
+    </div>
+    <div class="user_info">
+        <form>
+          <label for="name">
+            Cardholder Name
+            <br>
+            <input type="text" id = "name" name="name" placeholder="e.g. Fernando Irusta">
+            <span class = "ms"></span>
+          </label>
+          <label for="number">
+            Card Number
+            <br>
+            <input type="tel" id = "number" name="number" placeholder=" e.g. 1234 1234 1234 1234" maxlength="19">
+            <span class = "ms"></span>
+          </label>
+          <div>
+            <label for="data">Exp. Date (MM/YY) <br>
+              <input type="tel" name="month_data" id="month" placeholder="MM" maxlength="2">
+              <span class = "ms"></span>
+              <input type="tel" name="_data"placeholder="YY" maxlength="2" id = "year">
+              <span class = "ms y"></span>
+            </label>
+            <label for="cvc">CVC <br>
+              <input type="tel" id = "cvc" name ="cvc" placeholder="e.g. 123" maxlength="3">
+              <span class = "ms"></span>
+            </label>
+          </div>
+          <button id = "confirm">Confirm</button>
+        </form>
+    </div>
+    <script src="/PROYECT-1-SENPAI.js"></script>
+  </main> 
+  
+</body>
+</html>
